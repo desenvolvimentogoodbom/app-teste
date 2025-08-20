@@ -32,4 +32,5 @@ RUN npm install --omit=dev
 EXPOSE 4321
 
 # Comando para iniciar o app
-CMD ["npx", "astro", "preview"]
+#CMD ["npx", "astro", "preview"]
+CMD ["npx", "astro", "preview", "--host", "0.0.0.0", "--port", "4321"]
