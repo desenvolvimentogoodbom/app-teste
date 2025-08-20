@@ -29,6 +29,7 @@ COPY astro.config.* ./
 RUN npm install --omit=dev
 
 # Expõe a porta padrão
+ENV PORT=4321
 EXPOSE 4321
 
 # Comando para iniciar o app
