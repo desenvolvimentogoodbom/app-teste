@@ -1,0 +1,11 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: meu-astro:latest
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "4321:4321"
+    restart: unless-stopped
